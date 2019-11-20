@@ -19,8 +19,8 @@ mod constructors_random {
 
     #[test]
     fn random() {
-        let shape = __;
-        let distribution = __;
+        let shape = (2, 3, 10);
+        let distribution = Uniform::new_inclusive(0, 10);
         let a = Array::random(shape, distribution);
 
         assert_eq!(a.ndim(), 3);
